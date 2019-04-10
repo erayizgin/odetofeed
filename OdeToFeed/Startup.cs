@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -18,6 +19,7 @@ namespace OdeToFeed
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IGreeter, Greeter>();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,37 +27,28 @@ namespace OdeToFeed
                                 //IConfiguration configuration)
                                 IGreeter greeter, ILogger<Startup> logger)
         {
-            //if (env.IsDevelopment())
-            //{
-            //    app.UseDeveloperExceptionPage();
-            //}
-            app.Use(next =>
+            if (env.IsDevelopment())
             {
-                return async context =>
-                {
-                    logger.LogInformation("Request Incoming");
-                    if (context.Request.Path.StartsWithSegments("/mym"))
-                    {
-                        await context.Response.WriteAsync("Hit!!!");
-                        logger.LogInformation("Request handled");
-                    } else
-                    {
-                        await next(context);
-                        logger.LogInformation("Response Outgoing");
-                    }
-                };
-            });
-            app.UseWelcomePage(new WelcomePageOptions
-            {
-                Path = "/wp"
-            });
+                app.UseDeveloperExceptionPage();
+            }
+
+            //app.UseStaticFiles();
+
+            app.UseMvc(ConfigureRoutes);
 
             app.Run(async (context) =>
             {
                 //var greeting = configuration["Greeting"];
                 var greeting = greeter.GetMessageOfTheDay();
-                await context.Response.WriteAsync(greeting);
+                await context.Response.WriteAsync($"{greeting} : {env.EnvironmentName}");
             });
+        }
+
+        private void ConfigureRoutes(IRouteBuilder routeBuilder)
+        {
+            //Home / Index
+            routeBuilder.MapRoute("Default", 
+                        "{controller=Home}/{action=Index}/{id?}"); //= ile devam eden kısım default controller veya action
         }
     }
 }

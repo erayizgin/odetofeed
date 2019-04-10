@@ -1,0 +1,14 @@
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\bin\Debug\netcoreapp2.1\OdeToFeed.deps.json
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\bin\Debug\netcoreapp2.1\OdeToFeed.runtimeconfig.json
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\bin\Debug\netcoreapp2.1\OdeToFeed.runtimeconfig.dev.json
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\bin\Debug\netcoreapp2.1\OdeToFeed.dll
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\bin\Debug\netcoreapp2.1\OdeToFeed.pdb
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.csproj.CoreCompileInputs.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.RazorAssemblyInfo.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.RazorAssemblyInfo.cs
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.AssemblyInfoInputs.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.AssemblyInfo.cs
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.RazorTargetAssemblyInfo.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.dll
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.pdb
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.csprojAssemblyReference.cache
