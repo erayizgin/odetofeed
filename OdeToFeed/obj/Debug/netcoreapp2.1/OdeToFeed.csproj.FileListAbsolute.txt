@@ -12,3 +12,12 @@ D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debu
 D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.dll
 D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.pdb
 D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.csprojAssemblyReference.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\bin\Debug\netcoreapp2.1\OdeToFeed.Views.dll
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\bin\Debug\netcoreapp2.1\OdeToFeed.Views.pdb
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.TagHelpers.input.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.TagHelpers.output.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.RazorCoreGenerate.cache
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.RazorTargetAssemblyInfo.cs
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.Views.pdb
+D:\VS Workspaces\PluralSight\AspnetCoreFundamentals\OdeToFeed\OdeToFeed\obj\Debug\netcoreapp2.1\OdeToFeed.csproj.CopyComplete

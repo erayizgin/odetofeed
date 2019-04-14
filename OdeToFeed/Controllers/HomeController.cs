@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OdeToFeed.Models;
+using OdeToFeed.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +10,16 @@ namespace OdeToFeed.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        private IRestaurantData _restaurantData;
+        public HomeController(IRestaurantData restaurantData)
         {
-            this.
-            return "Hello Home Controller";
+            _restaurantData = restaurantData;
+        }
+        public IActionResult Index()
+        {
+            var model = _restaurantData.GetAll();
+
+            return View(model);
         }
     }
 }
