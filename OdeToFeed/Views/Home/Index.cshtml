@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OdeToFeed.Models.Restaurant>
+﻿@model OdeToFeed.ViewModels.HomeIndexViewModel
 <!DOCTYPE html>
 
 <html>
@@ -7,15 +7,21 @@
     <title>Index</title>
 </head>
 <body>
+    <h1>@Model.CurrentMessage</h1>
     <table>
-        @foreach (var restaurant in Model)
+        @foreach (var restaurant in Model.Restaurants)
         {
         <tr>
             <td>@restaurant.Id</td>
             <td>@restaurant.Name</td>
+            <td>
+                <a href="/home/details/@restaurant.Id">Details</a>
+                @Html.ActionLink("Go", "Details", new { id = restaurant.Id})
+            </td>
         </tr>
         }
 
     </table>
+    <a asp-action="Create">Add Restaurant</a>
 </body>
 </html>

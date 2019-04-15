@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OdeToFeed.Models;
 using OdeToFeed.Services;
+using OdeToFeed.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +12,44 @@ namespace OdeToFeed.Controllers
     public class HomeController : Controller
     {
         private IRestaurantData _restaurantData;
-        public HomeController(IRestaurantData restaurantData)
+        private IGreeter _greeter;
+
+        public HomeController(IRestaurantData restaurantData, IGreeter greeter)
         {
             _restaurantData = restaurantData;
+            _greeter = greeter;
+
         }
         public IActionResult Index()
         {
-            var model = _restaurantData.GetAll();
+            var model = new HomeIndexViewModel();
+            model.Restaurants = _restaurantData.GetAll();
+            model.CurrentMessage = _greeter.GetMessageOfTheDay();
 
             return View(model);
+        }
+        public IActionResult Details(int id)
+        {
+            var model = _restaurantData.Get(id);
+            if (model == null)
+                return RedirectToAction(nameof(Index));
+            return View(model);
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(RestaurantEditModel model)
+        {
+            var newRestaurant = new Restaurant();
+            newRestaurant.Name = model.Name;
+            newRestaurant.Cuisine = model.Cuisine;
+
+            newRestaurant = _restaurantData.Add(newRestaurant);
+
+            return View("Details", newRestaurant);
         }
     }
 }
